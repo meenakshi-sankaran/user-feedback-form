@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<footer>
+    <p>&copy; 2026 coding project 1. All rights reserved.</p>
+</footer> 
+
+<script src="cp_1.js"></script>
+
+<body>
+
+    <div id="page-wrapper">
+        
+        <h2>Share Your Feedback</h2>
+
+        <form id="feedback-form">
+            <div class="form-group">
+                <label for="username">Name:</label>
+                <input type="text" id="username" placeholder="Enter your full name" data-tooltip="Please enter your name.">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" data-tooltip="We will never share your email.">
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Comments:</label>
+                <textarea id="comments" placeholder="Write your thoughts here..." data-tooltip="Tell us what you think!"></textarea>
+                <small id="char-counter">0 characters</small>
+            </div>
+
+            <button type="submit" id="submit-btn">Submit Feedback</button>
+        </form>
+
+        <div id="tooltip" class="hidden-tooltip"></div>
+
+        <div id="error-message"></div>
+
+        <h3>Submitted Feedback</h3>
+        <div id="feedback-display"></div>
+
+    </div>
+
+    <script src="cp_1.js"></script>
+</body>
+</html>
+
